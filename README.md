@@ -1,7 +1,102 @@
-# Tauri + Vue + TypeScript
+# 应用工具箱 (Toolkit)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+一个基于 Tauri + Vue 3 + TypeScript 开发的桌面应用程序，旨在帮助用户管理和快速启动常用应用程序，提高工作效率。
 
-## Recommended IDE Setup
+## 功能特性
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- 🚀 **一键启动** - 支持一键启动所有已添加的应用程序
+- 📱 **应用管理** - 轻松添加、删除和管理您的常用应用程序
+- 💾 **本地存储** - 应用列表本地持久化存储，无需重复添加
+- 🎨 **现代化界面** - 基于 Element Plus 的美观响应式界面
+- 🌙 **暗黑模式** - 支持明暗主题切换，适应不同使用场景
+- ⚡ **轻量高效** - 基于 Tauri 框架，占用资源少，启动速度快
+
+## 技术栈
+
+- **前端框架**: Vue 3 + TypeScript
+- **UI 组件库**: Element Plus
+- **桌面框架**: Tauri 2.x
+- **构建工具**: Vite
+- **路由管理**: Vue Router 4
+- **状态管理**: Tauri Store Plugin
+- **图标库**: Element Plus Icons
+
+## 安装与运行
+
+### 环境要求
+
+- Node.js >= 18.0.0
+- npm >= 8.0.0 或 yarn >= 1.22.0
+- Rust >= 1.70.0 (Tauri 需要)
+
+### 开发环境安装
+
+1. 克隆项目
+```bash
+git clone https://github.com/lemon0062/toolkit.git
+cd toolkit
+```
+
+2. 安装依赖
+```bash
+npm install
+```
+
+3. 启动开发服务器
+```bash
+npm run tauri dev
+```
+
+### 生产环境构建
+
+```bash
+npm run tauri build
+```
+
+构建完成后，可执行文件将位于 `src-tauri/target/release/` 目录下。
+
+## 使用指南
+
+### 添加应用程序
+
+1. 打开应用，点击导航栏中的「设置」
+2. 点击「添加应用程序」按钮
+3. 在弹出的文件选择器中选择要添加的应用程序
+4. 应用程序将自动添加到列表中
+
+### 启动应用程序
+
+- **单个启动**: 在应用列表中点击应用卡片或点击右侧的启动按钮
+- **批量启动**: 在首页点击「一键启动所有应用」按钮
+
+### 管理应用程序
+
+- 在设置页面可以查看所有已添加的应用程序
+- 点击「删除」按钮可以移除不需要的应用程序
+
+## 开发计划
+
+- [ ] 应用程序分类管理
+- [ ] 应用启动顺序设置
+- [ ] 自定义应用图标
+- [ ] 快捷键支持
+- [ ] 应用使用统计
+- [ ] 数据导入导出功能
+- [ ] 多语言支持
+- [ ] 主题自定义
+
+## 联系方式
+
+如有问题或建议，请通过以下方式联系:
+
+- 邮箱: sleeep205@gmail.com
+
+## 更新日志
+
+### v0.1.0 (2024-XX-XX)
+
+- 🎉 初始版本发布
+- ✨ 实现应用程序添加和删除功能
+- ✨ 实现一键启动所有应用功能
+- ✨ 实现本地数据持久化存储
+- ✨ 实现响应式界面设计
